@@ -1,8 +1,8 @@
 {
-  "name": "baileys",
+  "name": "Baileys",
   "version": "5.0.2",
   "description": "WhatsApp API",
-  "homepage": "https://github.com/amiruldev20/Baileys",
+  "homepage": "https://github.com/stafbotz/Baileys",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "keywords": [
@@ -32,7 +32,7 @@
   "author": "Amirul Dev",
   "license": "MIT",
   "repository": {
-    "url": "git@github.com:amiruldev20/Baileys.git"
+    "url": "git@github.com:stafbotz/Baileys.git"
   },
   "dependencies": {
     "@hapi/boom": "^9.1.3",
