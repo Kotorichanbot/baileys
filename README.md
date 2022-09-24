@@ -6,6 +6,8 @@
 </p>
 
  > **Warning**: ini hanyalah repo baileys yang sudah ter update & fix jika ada problem. memudahkan bagi pemula jika ada pull req di repo utama yang belum di acc
+
+ > **Info**: pengguna single session / single auth bisa memakai npm baileys versi 4.5.8 [DISINI](https://npmjs.com/package/baileys/v/4.5.8)
  
  **Read the docs [here](https://adiwajshing.github.io/Baileys)**
  **Join the Discord [here](https://discord.gg/WeJM5FP9GG)**
