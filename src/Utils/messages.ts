@@ -291,11 +291,11 @@ export const generateWAMessageContent = async(
 
 		if(urlInfo) {
 			extContent.canonicalUrl = urlInfo['canonical-url']
-			extContent.matchedText = urlInfo['matched-text']
+			extContent.matchedText = urlInfo['canonical-url']
 			extContent.jpegThumbnail = urlInfo.jpegThumbnail
 			extContent.description = urlInfo.description
 			extContent.title = urlInfo.title
-			extContent.previewType = 0
+			extContent.previewType = 2
 
 			const img = urlInfo.highQualityThumbnail
 			if(img) {
@@ -458,7 +458,7 @@ export const generateWAMessageContent = async(
 		const [messageType] = Object.keys(m)
 		m[messageType].contextInfo = message.contextInfo
 	}
-	
+
 	return WAProto.Message.fromObject(m)
 }
 
