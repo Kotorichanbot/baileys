@@ -245,7 +245,7 @@ export const fetchLatestBaileysVersion = async(options: AxiosRequestConfig<any> 
  * A utility that fetches the latest web version of whatsapp.
  * Use to ensure your WA connection is always on the latest version
  */
-export const fetchLatestWaWebVersion = async(options: AxiosRequestConfig<any>) => {
+export const fetchLatestWaWebVersion = async(options: AxiosRequestConfig<any> = {}) => {
 	try {
 		const result = await axios.get(
 			'https://web.whatsapp.com/check-update?version=1&platform=web',
