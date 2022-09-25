@@ -473,6 +473,10 @@ export const makeMessagesRecvSocket = (config: SocketConfig) => {
 						)
 					} else {
 						// no type in the receipt => message delivered
+                                                //remove the message from retry map if it has been successfully sent
+						if(msgRetryMap[msg.key.id!]) {
+							delete msgRetryMap[msg.key.id!]
+						}
 						let type: MessageReceiptType = undefined
 						let participant = msg.key.participant
 						if(category === 'peer') { // special peer message
