@@ -637,7 +637,7 @@ export const makeMessagesSocket = (config: SocketConfig) => {
 					}
 				}
 
-				fullMsg.message = patchMessageForMdIfRequired(fullMsg.message!)
+				fullMsg.message = (options.patchMdCustom || patchMessageForMdIfRequired)(fullMsg.message!)
 				await relayMessage(jid, fullMsg.message!, { messageId: fullMsg.key.id!, cachedGroupMetadata: options.cachedGroupMetadata, additionalAttributes })
 				if(config.emitOwnEvents) {
 					process.nextTick(() => {
