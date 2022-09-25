@@ -10,7 +10,7 @@ import { ConnectionState } from './State'
 
 export type BaileysEventMap = {
     /** connection state has been updated -- WS closed, opened, connecting etc. */
-	'connection.update': Partial<ConnectionState>
+    'connection.update': Partial<ConnectionState>
     /** credentials updated -- some metadata, keys or something */
     'creds.update': Partial<AuthenticationCreds>
     /** set chats (history sync), chats are reverse chronologically sorted */
@@ -47,7 +47,7 @@ export type BaileysEventMap = {
     'groups.upsert': GroupMetadata[]
     'groups.update': Partial<GroupMetadata>[]
     /** apply an action to participants in a group */
-    'group-participants.update': { id: string, participants: string[], action: ParticipantAction }
+    'group-participants.update': { id: string, author?: string, participants: string[], action: ParticipantAction }
 
     'blocklist.set': { blocklist: string[] }
     'blocklist.update': { blocklist: string[], type: 'add' | 'remove' }
