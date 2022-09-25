@@ -186,6 +186,7 @@ export type MiscMessageGenerationOptions = MinimalRelayOptions & {
     ephemeralExpiration?: number | string
     /** timeout for media upload to WA server */
     mediaUploadTimeoutMs?: number
+    /** optional, patch custom */
     patchMdCustom?: (message: proto.IMessage)
 }
 export type MessageGenerationOptionsFromContent = MiscMessageGenerationOptions & {
