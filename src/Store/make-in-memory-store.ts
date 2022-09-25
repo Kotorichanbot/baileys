@@ -319,16 +319,6 @@ export default (
 
 			return groupMetadata[jid]
 		},
-	        fetchBroadcastListInfo: async(jid: string, sock: WASocket | undefined) => {
-	        	if(!groupMetadata[jid]) {
-		 		const metadata = await sock?.getBroadcastListInfo(jid)
-		 		if(metadata) {
-		 			groupMetadata[jid] = metadata
-		 		}
-			}
-
-		 	return groupMetadata[jid]
-	        },
 		fetchMessageReceipts: async({ remoteJid, id }: WAMessageKey) => {
 			const list = messages[remoteJid!]
 			const msg = list?.get(id!)
