@@ -1,6 +1,6 @@
 {
   "name": "Baileys",
-  "version": "5.0.2",
+  "version": "5.0.3",
   "description": "WhatsApp API",
   "homepage": "https://github.com/stafbotz/Baileys",
   "main": "lib/index.js",
@@ -29,7 +29,7 @@
     "lint": "eslint ./src --ext .js,.ts,.jsx,.tsx",
     "lint:fix": "eslint ./src --fix --ext .js,.ts,.jsx,.tsx"
   },
-  "author": "Amirul Dev",
+  "author": "Natia Shalsabilla",
   "license": "MIT",
   "repository": {
     "url": "git@github.com:stafbotz/Baileys.git"
