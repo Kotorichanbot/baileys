@@ -189,7 +189,7 @@ The events are typed up in a type map, as mentioned here:
 
 export type BaileysEventMap<T> = {
     /** connection state has been updated -- WS closed, opened, connecting etc. */
-	'connection.update': Partial<ConnectionState>
+    'connection.update': Partial<ConnectionState>
     /** credentials updated -- some metadata, keys or something */
     'creds.update': Partial<T>
     /** set chats (history sync), chats are reverse chronologically sorted */
